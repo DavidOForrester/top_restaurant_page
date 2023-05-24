@@ -1,9 +1,4 @@
-import _ from 'lodash';
-import RestaurentImage from "./restaurant.jpg";
+import _ from "lodash";
+import pageLoad from "./pageload.js";
 
-const element = document.getElementById("content");
-
-const myRestaurentImage = new Image();
-myRestaurentImage.src = RestaurentImage;
-
-element.appendChild(myRestaurentImage);
+pageLoad;
