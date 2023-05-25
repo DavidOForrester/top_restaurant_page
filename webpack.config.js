@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   entry: {
     index: './src/index.js',
-    pageLoad: './src/pageload.js',
+    pageload: './src/pageload.js',
   },
   plugins: [
     new HtmlWebpackPlugin({

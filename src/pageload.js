@@ -1,7 +1,8 @@
-import RestaurentImage from "./restaurant.jpg";
-
-export default function initialPageLoad() {
-  const content = document.getElementById("content");
+export default function pageLoad(RestaurentImage) {
+  // content
+  const content = document.createElement("div");
+  content.id = "content"
+  document.body.appendChild(content)
 
   // header
   const header = document.createElement("header");
