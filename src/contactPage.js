@@ -1,4 +1,4 @@
-export default function pageLoad(RestaurentImage) {
+export default function contactPage(RestaurentImage) {
   // content
   const content = document.createElement("div");
   content.id = "content"
@@ -23,21 +23,7 @@ export default function pageLoad(RestaurentImage) {
   content.appendChild(main);
 
   // p
-  const mainParaOne = document.createElement("p");
-  mainParaOne.innerText =
-    "The Wonderful Restaurant is a great place to enjoy a delicious meal with friends or family. We offer a wide variety of dishes to choose from, all made with fresh, high-quality ingredients. Our service is friendly and attentive, and our atmosphere is warm and inviting.";
-  main.appendChild(mainParaOne);
 
-  // p
-  const mainParaTwo = document.createElement("p");
-  mainParaTwo.innerText =
-    "We are open for lunch and dinner, seven days a week. We also offer a full bar, so you can enjoy a drink with your meal.";
-  main.appendChild(mainParaTwo);
-
-  // p
-  const mainParaThree = document.createElement("p");
-  mainParaThree.innerText = "We hope to see you soon!";
-  main.appendChild(mainParaThree);
 
   // footer
   const footer = document.createElement("footer");
