@@ -22,8 +22,8 @@ export default function contactPage(RestaurentImage) {
   const main = document.createElement("main");
   content.appendChild(main);
 
-  // p
-
+  // contact us
+  
 
   // footer
   const footer = document.createElement("footer");
