@@ -4,4 +4,4 @@ import menuPage from "./menuPage.js";
 import contactPage from "./contactPage.js";
 import RestaurentImage from "./restaurant.jpg";
 
-menuPage(RestaurentImage);
+contactPage(RestaurentImage);
