@@ -39,6 +39,10 @@ export default function menuPage(RestaurentImage) {
   content.appendChild(main);
 
   // menu
+  const menu = document.createElement("div")
+  menu.className = "menu"
+  main.appendChild(menu)
+
   var items = [
     {
       name: "Appetizers",
@@ -151,7 +155,7 @@ export default function menuPage(RestaurentImage) {
     var section = document.createElement("section");
     section.className = "menu-section";
     section.innerHTML = items[i].name;
-    main.appendChild(section);
+    menu.appendChild(section);
 
     for (var j = 0; j < items[i].items.length; j++) {
       var item = document.createElement("li");
