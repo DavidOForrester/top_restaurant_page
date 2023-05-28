@@ -27,12 +27,12 @@ export default function menuPage(RestaurentImage) {
   const homePageButton = document.createElement("button");
   homePageButton.id = "home-button"
   homePageButton.innerText = "Home";
-  content.appendChild(homePageButton);
+  header.appendChild(homePageButton);
 
   const contactPageButton = document.createElement("button");
   contactPageButton.id = "contact-button"
   contactPageButton.innerText = "Contact Us";
-  content.appendChild(contactPageButton);
+  header.appendChild(contactPageButton);
 
   // main
   const main = document.createElement("main");
