@@ -1,8 +1,13 @@
 export default function homePage(RestaurentImage) {
   // content
   const content = document.createElement("div");
-  content.id = "content"
-  document.body.appendChild(content)
+  content.id = "content";
+  document.body.appendChild(content);
+
+  // image
+  const myRestaurentImage = new Image();
+  myRestaurentImage.src = RestaurentImage;
+  content.appendChild(myRestaurentImage);
 
   // header
   const header = document.createElement("header");
@@ -13,10 +18,21 @@ export default function homePage(RestaurentImage) {
   headerText.innerText = "The Wonderful Restaurant";
   header.appendChild(headerText);
 
-  // image
-  const myRestaurentImage = new Image();
-  myRestaurentImage.src = RestaurentImage;
-  header.appendChild(myRestaurentImage);
+  // h2
+  const subHeaderText = document.createElement("h2");
+  subHeaderText.innerText = "Home";
+  header.appendChild(subHeaderText);
+
+  // Toggle buttons
+  const menuPageButton = document.createElement("button");
+  menuPageButton.id = "menu-button"
+  menuPageButton.innerText = "Menu";
+  content.appendChild(menuPageButton);
+
+  const contactPageButton = document.createElement("button");
+  contactPageButton.id = "contact-button"
+  contactPageButton.innerText = "Contact Us";
+  content.appendChild(contactPageButton);
 
   // main
   const main = document.createElement("main");
@@ -45,6 +61,6 @@ export default function homePage(RestaurentImage) {
 
   // p
   const footerPara = document.createElement("p");
-  footerPara.innerText = "Copyright &copy; 2023 The Wonderful Restaurant";
+  footerPara.innerText = "Copyright 2023 The Wonderful Restaurant";
   footer.appendChild(footerPara);
 }

@@ -4,6 +4,11 @@ export default function contactPage(RestaurentImage) {
   content.id = "content";
   document.body.appendChild(content);
 
+  // image
+  const myRestaurentImage = new Image();
+  myRestaurentImage.src = RestaurentImage;
+  content.appendChild(myRestaurentImage);
+
   // header
   const header = document.createElement("header");
   content.appendChild(header);
@@ -13,10 +18,21 @@ export default function contactPage(RestaurentImage) {
   headerText.innerText = "The Wonderful Restaurant";
   header.appendChild(headerText);
 
-  // image
-  const myRestaurentImage = new Image();
-  myRestaurentImage.src = RestaurentImage;
-  header.appendChild(myRestaurentImage);
+  // h2
+  const subHeaderText = document.createElement("h2");
+  subHeaderText.innerText = "Contact Us";
+  header.appendChild(subHeaderText);
+
+  // Toggle buttons
+  const homePageButton = document.createElement("button");
+  homePageButton.id = "home-button"
+  homePageButton.innerText = "Home";
+  content.appendChild(homePageButton);
+
+  const menuPageButton = document.createElement("button");
+  menuPageButton.id = "menu-button";
+  menuPageButton.innerText = "Menu";
+  content.appendChild(menuPageButton);
 
   // main
   const main = document.createElement("main");
@@ -25,10 +41,6 @@ export default function contactPage(RestaurentImage) {
   // contact us
   const div = document.createElement("div");
   div.id = "contact-us";
-
-  const h1 = document.createElement("h1");
-  h1.textContent = "Contact Us";
-  div.appendChild(h1);
 
   const p = document.createElement("p");
   p.textContent = "We would love to hear from you!";
@@ -70,6 +82,6 @@ export default function contactPage(RestaurentImage) {
 
   // p
   const footerPara = document.createElement("p");
-  footerPara.innerText = "Copyright &copy; 2023 The Wonderful Restaurant";
+  footerPara.innerText = "Copyright 2023 The Wonderful Restaurant";
   footer.appendChild(footerPara);
 }
